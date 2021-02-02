@@ -17,7 +17,7 @@ class FireWall(QMainWindow):
         self.ui = Ui_Form()
         self.ui.setupUi(self)
         self.ui.listWidget.addItem(self.Yazdir())
-        self.ui.lineEdit.setText("iitb.ac.in")
+        #self.ui.lineEdit.setText("iitb.ac.in")
         self.ui.pushButton.clicked.connect(self.IpEngelle)
         self.ui.pushButton_2.clicked.connect(self.IpEngellemesiniKaldir)
         self.ui.pushButton_4.clicked.connect(self.Sifirla)
