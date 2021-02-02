@@ -9,20 +9,7 @@ QLineEdit, QInputDialog)
 from arayuz_fw import Ui_Form
 
 import os, subprocess
-###############################################    YAPILACAKLAR    ##########################################################################
-#sudo pw koddan girdirme
 
-"""Olağan seçeneklerle düzenlenmiş Iptables komutu şu şekildedir:
-
-sudo iptables -A -i <interface> -p <protocol (tcp/udp) > -s <source> --dport <port no.> -j <target>"""
-
-
-
-"""Kurallarınızı belirledikten sonra gelen diğer trafiğin tamamını reddetmek (DROP) önemlidir. Aksi durumda diğer tüm açık portlardan izin verilmemiş erişim kurulabilir.
-
-iptables -P INPUT DROP => Bu komut ise hepsini engeller
-"""
-#############################################################################################################################################
 from subprocess import Popen, PIPE
 class FireWall(QMainWindow):
     def __init__(self):
